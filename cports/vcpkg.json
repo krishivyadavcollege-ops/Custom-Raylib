@@ -1,0 +1,8 @@
+{
+  "name": "keyb-map",
+  "version": "1.0.0",
+  "description": "Raylib keyboard mapping helper",
+  "dependencies": [
+    "raylib"
+  ]
+}
