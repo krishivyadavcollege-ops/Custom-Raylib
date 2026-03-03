@@ -8,6 +8,13 @@ string kbInput(KeyboardKey k)
     {
         return KeyBoardMapping_with_Shift[k];
     }
+
+    else if(IsKeyDown(KEY_LEFT_CONTROL) and IsKeyPressed(KEY_V))
+    {
+        const char * clipboardtext = GetClipboardText();
+        return string(clipboardtext);
+    }
+
     else
     {
     return KeyBoardMapping[k];
