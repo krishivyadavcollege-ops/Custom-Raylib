@@ -5,7 +5,7 @@
 #include<raylib.h>
 #include<string>
 #include<map>
-#include<functional>
+
 
 inline std::map <KeyboardKey, std::string> KeyBoardMapping = {
     // Alphanumeric
@@ -59,22 +59,7 @@ inline std::map <KeyboardKey, std::string> KeyBoardMapping_with_Shift
     {KEY_ENTER ,"\n"}
 };
 
-
-
-std::string keyBoard(std::string& buffer,KeyboardKey key)
-{
-	
-
-	if (IsKeyDown(KEY_LEFT_SHIFT) || IsKeyDown(KEY_RIGHT_SHIFT))
-	{
-        return KeyBoardMapping[key];
-	}
-    else
-    {
-        return KeyBoardMapping_with_Shift[key];
-    }
-}
-
+std::string kbInput(KeyboardKey k);
 
 
 #endif
